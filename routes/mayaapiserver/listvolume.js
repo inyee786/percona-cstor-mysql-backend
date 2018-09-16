@@ -12,17 +12,25 @@ var options = {
         'Content-Type': 'application/json'
     }
 };
-console.log(url);
-// http.get(options, function (err, resp, body) {
-//     if (err) {
-//         console.log("this is volume erro namespaces ");
-//     } else {
-//         data = JSON.parse(body);
-//         console.log(JSON.stringify(data.items));
-//         console.log("this is volume lis http");
-//         console.log(data);
-//     }
-// });
+console.log(options);
+
+var options1 = {
+    url: `http://maya-apiserver-service.openebs:5656/latest/volumes/`,
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+};
+http.get(option1, function (err, resp, body) {
+    if (err) {
+        console.log("this is volume erro namespaces ");
+    } else {
+        data = JSON.parse(body);
+        console.log(JSON.stringify(data.items));
+        console.log("this is volume lis http");
+        console.log(data);
+    }
+});
 
 router.get('/volume', (req, res) => {
 
