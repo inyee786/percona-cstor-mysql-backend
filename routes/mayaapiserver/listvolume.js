@@ -5,15 +5,18 @@ const http = require('request');
 
 
 
-var options = {
-    url: `http://${process.argv[6]}:5656/latest/volumes/`,
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-};
-console.log(options);
+// var options = {
+//     url: `http://${process.argv[6]}:5656/latest/volumes/`,
+//     method: 'GET',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     }
+// };
+// console.log(options);
 
+for(i=0;i<process.argv.length;i++){
+    console.log(process.argv[i]);
+}
 var options1 = {
     url: `http://maya-apiserver-service.openebs:5656/latest/volumes/`,
     method: 'GET',
