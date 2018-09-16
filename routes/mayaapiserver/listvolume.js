@@ -21,7 +21,7 @@ var options1 = {
         'Content-Type': 'application/json'
     }
 };
-http.get(option1, function (err, resp, body) {
+http.get(options1, function (err, resp, body) {
     if (err) {
         console.log("this is volume erro namespaces ");
     } else {
