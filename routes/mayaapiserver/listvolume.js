@@ -6,7 +6,7 @@ const http = require('request');
 
 
 var options = {
-    url: `http://${process.argv[5]}:5656/latest/volumes/`,
+    url: `http://${process.argv[6]}:5656/latest/volumes/`,
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
@@ -27,11 +27,11 @@ http.get(options, function (err, resp, body) {
 router.get('/volume', (req, res) => {
 
     var options = {
-        url: `http://${process.argv[5]}:5656/latest/volumes/`,
+        url: `http://${process.argv[6]}:5656/latest/volumes/`,
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            'namespace': `${process.argv[4]}`
+            'namespace': `${process.argv[5]}`
         }
     };
 

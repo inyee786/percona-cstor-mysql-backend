@@ -1,6 +1,6 @@
 # Backend server for openebs percona-dashboard 
 
-## http://perconajiva.openebs.ci
+## http://perconacstor.openebs.ci
 
 ### Install dependencies
 
@@ -11,7 +11,7 @@ npm install
 ### start backend server
 
 ```bash
-npm run start:server {mysql IP} {mysql password} {namespaces} {openebs}{mayaapiserver IP} 
+npm run start:server {mysql IP} {mysql password} {namespaces} openebs {mayaapiserver IP} 
 ```
 
 backend server run on http://localhost:3000
