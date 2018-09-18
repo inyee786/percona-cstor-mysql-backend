@@ -86,7 +86,7 @@ router.get("/sequence", (request, response) => {
                   // console.log(JSON.stringify(re.body));
 
                   for (i = 0; i < re.body.items.length; i++) {
-                    console.log(re.body.items[i].metadata.name);
+                    // console.log(re.body.items[i].metadata.name);
                     if (
                       re.body.items[i].metadata.name.includes(nameSpaces)
                     ) {
