@@ -90,6 +90,7 @@ router.get("/sequence", (request, response) => {
                     if (
                       re.body.items[i].metadata.name.includes(nameSpaces)
                     ) {
+                      console.log(re.body.items[i].metadata.name);
                       podDetails.jivaController.push({
                         kind: re.body.items[i].metadata.ownerReferences[0].kind,
                         name: re.body.items[i].metadata.name,
